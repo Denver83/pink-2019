@@ -1,0 +1,103 @@
+.form__filter-box{
+	padding-left: 84px;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	background-color: #f2f2f2;
+ 	border: none;
+ }
+ .filter-box__legend{
+ 	display: none;
+ }
+ .filter-box__title{
+ 	margin: 0;
+ 	text-align: center;
+ 	padding-right: 21px;
+ 	font-size: 14px;
+ 	line-height: 18px;
+ 	margin-left: -37px;
+ 	text-transform: uppercase;
+ 	color: #d8456d;
+ 	padding-bottom: 45px;
+ }
+.form__filter-box input[type="checkbox"]{
+ 	flex-basis: 25%;
+ 	min-height: 40px;
+ 	display: none;
+}
+.form__filter-box label{
+ 	position: relative;
+ 	flex-basis: 75%;
+ 	margin-bottom: 65px;
+ 	&::before {
+ 	content:"";
+ 	position: absolute;
+ 	top: -10px;
+ 	left: -63px;
+	width: 39px;
+	height: 39px;
+	background: url(../img/tickno.png) no-repeat center;
+	}
+ }
+.form__filter-box input[type="checkbox"] + label {
+	position: relative;
+	cursor: pointer;
+}
+.form__filter-box input[type="checkbox"]:checked + label:before{
+	content: '';
+	width: 39px;
+	height: 39px;
+	background: url(../img/tickyes.png) no-repeat;
+}
+@media (min-width: 660px) {
+	.form__filter-box{
+	width: 620px;
+	padding-left: 123px;
+	padding-top: 50px;
+	margin: 0 auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	background-color: #fff;
+ 	border: 1px solid #000;
+ }
+ .form__filter-box label{
+ 	position: relative;
+ 	flex-basis: 65%;
+ 	margin-bottom: 65px;
+ 	&::before {
+ 	content:"";
+ 	position: absolute;
+ 	top: -10px;
+ 	left: -63px;
+	width: 39px;
+	height: 39px;
+	background: url(../img/tickno.png) no-repeat center;
+	}
+ }
+ .filter-box__legend{
+ 	display: block;
+ 	font-size: 14px;
+ 	line-height: 30px;
+ 	text-transform: uppercase;
+ 	color: #d22856;
+ 	text-align: center;
+ }
+ .filter-box__title{
+ 	display: none;
+ }
+}
+@media (min-width: 1200px) {
+	.form__filter-box{
+	display: flex;
+	margin: 0;
+	width: 950px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+ }
+ .form__filter-box label{
+ 	display: block;
+ 	flex-basis: 25%;
+ 	flex-direction: row;
+ }
+ 	
+}

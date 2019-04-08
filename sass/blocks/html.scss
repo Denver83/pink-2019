@@ -1,0 +1,73 @@
+html {
+	box-sizing: border-box;
+}
+*,*::before,*::after {
+	box-sizing: inherit;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	min-width: 320px;
+	max-width: 1200px;
+}
+main{
+	width: 320px;
+	margin: 0 auto;
+	padding-top: 462px;
+	position: relative;
+	z-index: 3;	
+	&::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		min-height: 462px;
+		top: -70px;
+		left: 0;
+		z-index: 2;
+		background: url(../img/back-mobile.jpg) no-repeat;
+}
+}
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+@media (min-width: 660px) {
+	main{
+	width: 660px;
+	margin: 0 auto;
+	padding-top: 688px;
+	position: relative;
+	z-index: 3;	
+	&::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		min-height: 730px;
+		top: -110px;
+		left: 0;
+		z-index: 2;
+		background: url(../img/bg-back-tablet@1x.jpg) no-repeat;
+}
+}
+}
+@media (min-width: 1200px) {
+	main{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 688px;
+	position: relative;
+	z-index: 3;	
+	&::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		min-height: 855px;
+		top: -110px;
+		left: 0;
+		z-index: 2;
+		background: url(../img/bg-back-desktop@1x.jpg) no-repeat;
+}
+}
+}

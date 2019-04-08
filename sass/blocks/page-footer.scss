@@ -1,0 +1,54 @@
+.page-footer{
+	display: none;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+.page-footer__logo{
+	min-height: 40px;
+	width: 147px;
+	background: url(../img/logotype-blue-tablet.png) no-repeat;
+}
+.page-footer__socials{
+	display: flex;
+	justify-content: space-between;
+	width: 175px;
+
+}
+.social-link{
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #e9ebec;
+	border-radius: 50%;
+}
+.social-link--twitter{
+	background: url(../img/twitter.png) no-repeat center;
+}
+.social-link--facebook{
+	background: url(../img/facebook.png) no-repeat center;
+}
+.social-link--youtube{
+	background: url(../img/youtube.png) no-repeat center;
+}
+.page-footer__development{
+	display: flex;
+	padding-top: 10px;
+}
+.page-footer__development p{
+	margin: 0;
+	font-size: 14px;
+	line-height: 18px;
+	padding-top: 5px;
+	padding-right: 15px;
+}
+.htmlacademy__logo{
+	display: block;
+	width: 27px;
+	height: 34px;
+	background: url(../img/htmlacademy.png) no-repeat left;
+}
+@media (min-width: 660px) {
+.page-footer{
+	display: block;
+	}
+}

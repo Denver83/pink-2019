@@ -1,0 +1,57 @@
+.form__footer{
+	padding-bottom: 40px;
+}
+ .form__footer--logo{
+ 	position: relative;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	width: 150px;
+ 	height: 50px;
+ 	background: url(../img/logo-pink-blue-mobile.svg) no-repeat center;
+ 	margin-bottom: 30px;
+}
+ .form__footer--socials{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 40px;
+}
+.form__development{
+	display: flex;
+	padding-left: 70px;
+	padding-right: 70px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.form__development--text{
+	margin: 0;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+@media (min-width: 660px) {
+	.form__footer{
+	padding-bottom: 0;
+}
+	.form__footer--links{
+		display: flex;
+		justify-content: space-between;
+	
+	}
+	.form__footer--logo{
+		left: 0;
+		transform: none;
+		width: 150px;
+ 		height: 50px;
+		
+	}
+	.form__footer--socials{
+		padding: 0;
+		flex-basis: 26%;
+		
+	}
+	.form__development{
+		padding: 0;
+		padding-top: 10px;
+	}
+}
