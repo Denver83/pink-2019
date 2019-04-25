@@ -4,10 +4,12 @@ html {
 *,*::before,*::after {
 	box-sizing: inherit;
 }
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
 	max-width: 1200px;
+	margin: 0 auto;
 }
 main{
 	width: 320px;
