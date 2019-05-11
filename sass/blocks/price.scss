@@ -130,8 +130,6 @@
 	}
 	.hit--first .hit{
 		visibility: hidden;
-		padding-bottom: 10px;
-		
 	}
 	.hit--first p{
 		padding: 0;
@@ -177,9 +175,13 @@
 	.hit__item{
 	padding-bottom: 15px;
 	}
-.price__item--first,
-.price__item--second,
-.price__item--third{
+	.hit--first .hit{
+		visibility: hidden;
+		padding-bottom: 10px;
+	}
+  .price__item--first,
+  .price__item--second,
+  .price__item--third{
 	min-height: 50px;
 	text-align: left;
 	padding-left: 20px;

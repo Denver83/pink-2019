@@ -12,6 +12,9 @@
 	height: 24px;
 	background: url(../img/logo-mobile.png) no-repeat center;
 }
+.main-nav__logo:hover{
+	background: url(../img/logo-hover.png) no-repeat center;
+}
 .main-nav__user-list{
 	display: block;
 	border: none;

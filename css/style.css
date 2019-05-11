@@ -37,6 +37,15 @@
   text-transform: uppercase;
   color: #fff; }
 
+.main-header__item a:hover {
+  color: #d22856; }
+
+.main-header__item a:active {
+  opacity: 0.3; }
+
+.main-header__item a:focus {
+  color: #fff; }
+
 .main-header__link {
   width: 50%;
   display: block;
@@ -58,6 +67,8 @@
   .main-header__logo {
     margin-top: 0;
     background: url(../img/logo-pink-white-tablet.svg) no-repeat 15% 50%; }
+  .main-header__logo:hover {
+    background: url(../img/logo-hover.png) no-repeat 16% 50%; }
   .main-header__item {
     height: 65px; } }
 
@@ -259,6 +270,9 @@ main {
   width: 75px;
   height: 24px;
   background: url(../img/logo-mobile.png) no-repeat center; }
+
+.main-nav__logo:hover {
+  background: url(../img/logo-hover.png) no-repeat center; }
 
 .main-nav__user-list {
   display: block;
@@ -767,8 +781,7 @@ main {
   .hit--second .price__item--third {
     background: url(../img/no.png) no-repeat 50% 50%; }
   .hit--first .hit {
-    visibility: hidden;
-    padding-bottom: 10px; }
+    visibility: hidden; }
   .hit--first p {
     padding: 0;
     padding-top: 10px;
@@ -807,6 +820,9 @@ main {
     background: url(../img/shape6.png) no-repeat; }
   .hit__item {
     padding-bottom: 15px; }
+  .hit--first .hit {
+    visibility: hidden;
+    padding-bottom: 10px; }
   .price__item--first,
   .price__item--second,
   .price__item--third {
@@ -1007,9 +1023,15 @@ main {
   padding-bottom: 35px; }
 
 .page-footer__logo {
+  display: block;
+  text-decoration: none;
   min-height: 40px;
   width: 147px;
+  cursor: pointer;
   background: url(../img/logotype-blue-tablet.png) no-repeat; }
+
+.page-footer__logo:hover {
+  background: url(../img/logo-hover.png) no-repeat 17% 0%; }
 
 .page-footer__socials {
   display: flex;
@@ -1022,6 +1044,12 @@ main {
   height: 50px;
   border: 2px solid #e9ebec;
   border-radius: 50%; }
+
+.social-link:hover {
+  border: 2px solid #000; }
+
+.social-link:active {
+  opacity: 0.3; }
 
 .social-link--twitter {
   background: url(../img/twitter.png) no-repeat center; }
@@ -1048,6 +1076,12 @@ main {
   width: 27px;
   height: 34px;
   background: url(../img/htmlacademy.png) no-repeat left; }
+
+.htmlacademy__logo:hover {
+  background: url(../img/academy-hover.png) no-repeat left; }
+
+.htmlacademy__logo:active {
+  opacity: 0.3; }
 
 @media (min-width: 660px) {
   .page-footer {

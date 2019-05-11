@@ -4,10 +4,16 @@
 	padding-bottom: 35px;
 }
 .page-footer__logo{
+	display: block;
+	text-decoration: none;
 	min-height: 40px;
 	width: 147px;
+	cursor: pointer;
 	background: url(../img/logotype-blue-tablet.png) no-repeat;
 }
+.page-footer__logo:hover{
+	background: url(../img/logo-hover.png) no-repeat 17% 0%;
+	}
 .page-footer__socials{
 	display: flex;
 	justify-content: space-between;
@@ -20,6 +26,12 @@
 	height: 50px;
 	border: 2px solid #e9ebec;
 	border-radius: 50%;
+}
+.social-link:hover{
+ border: 2px solid #000;
+}
+.social-link:active{
+ opacity: 0.3;
 }
 .social-link--twitter{
 	background: url(../img/twitter.png) no-repeat center;
@@ -46,6 +58,12 @@
 	width: 27px;
 	height: 34px;
 	background: url(../img/htmlacademy.png) no-repeat left;
+}
+.htmlacademy__logo:hover{
+	background: url(../img/academy-hover.png) no-repeat left;
+}
+.htmlacademy__logo:active{
+	opacity: 0.3;
 }
 @media (min-width: 660px) {
 .page-footer{

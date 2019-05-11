@@ -38,6 +38,15 @@
 	text-transform: uppercase;
 	color: #fff;
 }
+.main-header__item a:hover{
+	color: #d22856;
+}
+.main-header__item a:active{
+	opacity: 0.3;
+}
+.main-header__item a:focus{
+	color: #fff;
+}
 .main-header__link{
 	width: 50%;
 	display: block;
@@ -61,6 +70,9 @@
 	.main-header__logo{
 	margin-top: 0;
 	background: url(../img/logo-pink-white-tablet.svg) no-repeat 15% 50%;
+	}
+	.main-header__logo:hover{
+	background: url(../img/logo-hover.png) no-repeat 16% 50%;
 	}
 	.main-header__item{
 	height: 65px;
